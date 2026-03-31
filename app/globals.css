@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --ios-blue: #007AFF;
+  --ios-red: #FF3B30;
+  --ios-green: #34C759;
+  --ios-orange: #FF9500;
+  --ios-bg: #F2F2F7;
+  --ios-surface: #FFFFFF;
+  --ios-surface2: #F2F2F7;
+  --ios-label: #000000;
+  --ios-label2: #3C3C43;
+  --ios-label3: #3C3C4399;
+  --ios-separator: #C6C6C8;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--ios-bg);
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+}
+
+/* Smooth scrolling for week bar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* iOS-like pressed state */
+.ios-press {
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+.ios-press:active {
+  opacity: 0.6;
+  transform: scale(0.97);
+}
