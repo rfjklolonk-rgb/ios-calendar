@@ -10,10 +10,10 @@ export default function FAB({ onClick }: FABProps) {
   return (
     <button
       onClick={onClick}
-      className="fixed z-40 flex items-center justify-center"
+      className="absolute z-40 flex items-center justify-center"
       style={{
-        bottom: "calc(env(safe-area-inset-bottom, 0px) + 76px)",
-        right: "calc(50% - 188px + 16px)", // max-w-md edge + 16px margin
+        bottom: 80,
+        right: 16,
         width: 56,
         height: 56,
         borderRadius: 28,

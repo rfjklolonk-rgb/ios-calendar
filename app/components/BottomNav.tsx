@@ -18,7 +18,7 @@ const tabs: { id: Tab; label: string; Icon: React.ComponentType<{ size?: number;
 export default function BottomNav({ activeTab, onTabChange }: BottomNavProps) {
   return (
     <nav
-      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-50"
+      className="flex-shrink-0 w-full z-50"
       style={{ background: "rgba(249,249,249,0.94)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }}
     >
       {/* top hairline separator */}
